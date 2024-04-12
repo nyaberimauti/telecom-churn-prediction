@@ -1,18 +1,18 @@
- # telecom-churn-prediction
+
 
 # Telecom Churn Prediction
-
 ## Project Overview
-#### A Churn is someone who stops to use a given service. The goal of this project is to predict churn, and what may be features that can lead to customer churning. Accurately predicting, will help business owners to find insights and come up with a marketing strategy. This will help them to understand ways they can retain customers for profitability
- ## Components
- `Jupyter Notebook` The Jupyter Notebook is our key deliverable and contains details of our approach and methodology, data cleaning, exploratory data analysis, and model building and validation.
+Churn refers to customers who discontinue using a particular service. The objective of this project is to predict churn and identify the features that contribute to customer attrition. Accurately predicting churn can provide valuable insights to business owners, enabling them to develop effective marketing strategies and enhance customer retention efforts for improved profitability.
+ 
+## Components
+**Jupyter Notebook**
 
-`Presentation` The presentation gives a high-level overview of our approach, findings, and recommendations for non-technical stakeholders. It is aimed to be between 5 and 10 minutes long.
+**Presentation**
 
-`Data`
+**Data**
 
-The dataset can be found in the file `telecom-churn.csv` in the Data folder, in this repository. It was originally provided in the following repository.
-## Technologies/ Packages
+## Technologies/Packages
+The project leverages several technologies and Python packages, including:
 
 - Python  version: 3.6.9
 - Matplotlib version: 3.1.3
@@ -21,24 +21,38 @@ The dataset can be found in the file `telecom-churn.csv` in the Data folder, in 
 - Numpy version: 1.16.5
 - Scikit-learn version: 0.21.
 ## 1 Data Preprocessing
-- Here we will work on data cleaning, handling missing values, data transformation, handling duplicates, data reshaping, and other processes to ensure that we have a clean, structured, and suitable format for analysis and modeling.
+- In this phase, we will focus on several tasks to prepare our data for analysis and modeling. This includes data cleaning, handling missing values, transforming data, addressing duplicates, reshaping the data, and other necessary processes to ensure that our dataset is clean, structured, and suitable for further analysis and modeling..
 # Exploratory Data Analysis (EDA)
-Here we will explore the different features of the dataset to gain a better understanding of the data. We will use data visualization to uncover trends and patterns. We will use Feature Engineering to create new features from existing ones and perform One-Hot Encoding on categorical variables that we will require for analysis.
+During the EDA phase, we will delve into the dataset to gain insights and understanding of its various features. We will employ data visualization techniques to uncover trends, patterns, and relationships within the data. Additionally, we will perform feature engineering to create new features from existing ones and utilize one-hot encoding to handle categorical variables as needed for our analysis and modeling tasks.
 
-### Features with a big impact on churn include
-`Daily charge`
-`Customer service calls`
-`Data usage`
-- We found out that daily charges had a big influence on customer churn
 
-## Modeling
-### The following are the different types of models I used:
-- `Logistic Regression` with an accuracy of approximately 70%
-- ` Decision Tree Classifier` with an accuracy of approximately 88%
-- `Random Forest Classifier` with an accuracy of approximately 92%
-- ` Voting Classifier` with an accuracy of approximately 91%
-- `Final model by using SMOTE` with an accuracy of 90%
-# Conclusions
-#### Churn is highly affected by daily charges, customer service calls, and data usage by customers.
-#### The business owners should improve their customer services
-#### Should revise daily charges on customers
+## Features with a Significant Impact on Churn
+**Daily Charge**: The amount customers are charged daily was found to have a significant influence on churn. Higher daily charges were associated with a higher likelihood of customers churning.
+
+**Customer Service Calls**: The number of customer service calls made by customers also played a notable role in churn prediction. Customers who made more frequent calls to customer service were more likely to churn.
+
+**Data Usage**: Data usage patterns emerged as another important factor affecting churn. Customers with specific data usage behaviors were more prone to churn compared to others.
+
+## Modeling Overview
+I explored various machine learning models to predict customer churn, each offering different accuracies and insights:
+
+**Logistic Regression**: Achieved an accuracy of around 70%.
+
+**Decision Tree Classifier**: Achieved an accuracy of approximately 88%.
+
+**Random Forest Classifier**: Achieved an accuracy of about 92%.
+
+**Voting Classifier**: Combined multiple models to achieve an accuracy of around 91%.
+
+**Final Model with SMOTE**: Utilized SMOTE (Synthetic Minority Over-sampling Technique) to handle class imbalance and achieved an accuracy of 90%.
+
+## Conclusions
+Customer churn is significantly influenced by `daily charges`, `customer service calls`, and `data usage patterns`.
+
+Recommendations for business owners based on the analysis:
+
+`Improve Customer Service`: Address the issues identified with customer service calls to enhance customer satisfaction and retention.
+
+`Revise Daily Charges`: Evaluate and potentially adjust the daily charges to align better with customer expectations and market standards.
+## Next Steps
+Model Deployment
